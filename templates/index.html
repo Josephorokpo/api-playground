@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,10 +7,32 @@
     <meta name="description" content="description"/>
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
-    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
     <meta charset="UTF-8" />
+    <style>
+      .resized-image {
+        width: 300px;  /* Set the desired width */
+        height: auto;  /* Maintain the aspect ratio */
+      }
+    </style>
   </head>
   <body>
-  <h1>Boilerplate</h1>
+    <h1>Boilerplate</h1>
+    <h4>Fact</h4>
+    <p>{{ fact }}</p>
+  
+    <h4>Advice</h4>
+    <p>{{ advice }}</p>
+
+    <h4>Dog</h4>
+    <img src="{{ dog_image }}" alt="Random Dog Image" class="resized-image" />
+
+    <h4>Unsplash Image</h4>
+    <img src="{{ image_url }}" alt="Unsplash Image" class="resized-image" />
+
+    {% if photo %}
+      <h4>Photo</h4>
+      <img src="{{ photo }}" alt="Uploaded Photo" class="resized-image" />
+    {% endif %}
   </body>
 </html>
