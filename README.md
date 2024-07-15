@@ -66,11 +66,11 @@ Add the UNSPLASH_ACCESS_KEY and UNSPLASH_SECRET_KEY to your environment variable
 └── requirements.txt
 
 8.  **Acknowledgments
-uselessfacts.jsph.pl
-api.adviceslip.com
-dog.ceo
-Unsplash
-https://randomapi.vidito.reple.co
+- uselessfacts.jsph.pl
+- api.adviceslip.com
+- dog.ceo
+- Unsplash
+- https://randomapi.vidito.reple.co
 
 
 
